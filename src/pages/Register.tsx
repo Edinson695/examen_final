@@ -86,7 +86,7 @@ export function Register(){
                         value={formData.fullName}
                         onChange={handleChange}
                         placeholder="Aaron Admin"
-                        />
+                    />
                 </div>
 
                 <div className="form-group">

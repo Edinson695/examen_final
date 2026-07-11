@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { newProduct, allProducts } from "../api/axiosInstance";
-import type { Product, ProductNew } from "../types";
+import { allProducts } from "../api/axiosInstance";
+import type { Product } from "../types";
 
 export function CatalogoGenerico() {
     const [product, setProduct] = useState<Product[]>([]); 

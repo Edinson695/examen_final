@@ -71,15 +71,13 @@ export function Login() {
     return(
         <div className="auth-container">
             <h2>Login</h2>
-                {errorMsg && (
-                <div style={{ color: 'red', backgroundColor: '#fee2e2', padding: '10px', borderRadius: '5px', marginBottom: '15px' }}>{errorMsg}
-                </div>)}
+                {errorMsg && (<div style={{ color: 'red', backgroundColor: '#fee2e2', padding: '10px', borderRadius: '5px', marginBottom: '15px' }}>{errorMsg}</div>)}
                 {successMsg && <div className="alert error">{successMsg}</div>}
 
 
             <form onSubmit={handleSubmit}>
 
-                <div className="from-group">
+                <div className="form-group">
                     <label>username</label>
                     <input 
                         type="email"
@@ -90,7 +88,7 @@ export function Login() {
                     />
                 </div>
 
-                <div className="from-group">
+                <div className="form-group">
                     <label>password</label>
                     <input 
                         type="password"
