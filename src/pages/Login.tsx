@@ -6,7 +6,7 @@ import { loginUser } from "../api/axiosInstance";
 export function Login() {
     const navigate = useNavigate();
     const [formData, setFormData] = useState<LoginPayload>({
-        email_username:'',
+        username:'',
         password:''
     });
 
@@ -24,7 +24,7 @@ export function Login() {
     const handleSubmit = async (e: React.FormEvent)=>{
         e.preventDefault();
 
-        if (!formData.email_username.trim() || !formData.password.trim()){
+        if (!formData.username.trim() || !formData.password.trim()){
             setErrorMsg("Todos los campos son requeridos!");
             setSuccessMsg(null);
             return;
@@ -80,11 +80,11 @@ export function Login() {
             <form onSubmit={handleSubmit}>
 
                 <div className="from-group">
-                    <label>email/username</label>
+                    <label>username</label>
                     <input 
                         type="email"
                         name="email"
-                        value={formData.email_username}
+                        value={formData.username}
                         onChange={handleChange}
                         placeholder="el de register"
                     />

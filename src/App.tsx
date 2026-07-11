@@ -3,7 +3,7 @@ import { ProtectedRoute } from "./components/ProtectedRouter";
 import { Navbar } from "./components/Navbar";
 import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
-//import { CatalogoGenerico } from "./pages/handleSavedAction";
+import { CatalogoGenerico } from "./pages/dashboard";
 
 export default function App() {
   return (
@@ -27,9 +27,9 @@ export default function App() {
             }
           >
             {/* Endpoints*/}
-            <Route path="/dashboard" element={<div>/* REEMPLAZA CON TU COMPONENTE  */</div>} />
-            <Route path="/products/new" element={<div>/* REEMPLAZA CON TU COMPONENTE  */</div>} />
-            <Route path="/products/:id" element={<div>/* REEMPLAZA CON TU COMPONENTE  */</div>} />
+            <Route path="/dashboard" element={<CatalogoGenerico/>} />
+            <Route path="/products/new" element={<div>/* pipipi*/</div>} />
+            <Route path="/products/:id" element={<div>/* pipipi  */</div>} />
           </Route>
         </Route>
 

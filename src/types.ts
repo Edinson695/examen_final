@@ -1,5 +1,5 @@
 export interface LoginPayload{
-    email_username : string,
+    username : string,
     password : string
 }
 
@@ -10,7 +10,7 @@ export interface RegisterPayload {
     username : string,
     email : string,
     password : string,
-    full_name : string
+    fullName : string
 }
 
 export type EventCategory = 'DISPONIBLE' | 'AGOTADO' | 'PRÓXIMAMENTE'
@@ -27,7 +27,6 @@ export interface Product{
 }
 
 export interface ProductNew{
-    id : number,
     name : string,
     description: string,
     category: string,

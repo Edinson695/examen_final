@@ -10,7 +10,7 @@ export function Register(){
         username:'',
         email:'',   
         password:'',
-        full_name:''
+        fullName:''
     });
 
     const[errorMsg, setErrorMsg] = useState<string | null>(null);
@@ -26,7 +26,7 @@ export function Register(){
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
-        if (!formData.email.trim() || !formData.password.trim() || !formData.full_name.trim() || !formData.username.trim()){
+        if (!formData.email.trim() || !formData.password.trim() || !formData.fullName.trim() || !formData.username.trim()){
             setErrorMsg("Todos los campos son requeridos");
             setSuccessMsg(null);
             return;
@@ -82,8 +82,8 @@ export function Register(){
                     <label>Fullname</label>
                     <input
                         type="text"
-                        name="full_name"
-                        value={formData.full_name}
+                        name="fullName"
+                        value={formData.fullName}
                         onChange={handleChange}
                         placeholder="Aaron Admin"
                         />
